@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body{
+      overflow-x: hidden;
+      height: 100%;
+  }
+  .bloque-ns-100{
+    width: 100%;
+  }
+  .bloque-ns{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .grilla{
+      display: grid;
+      grid-template-columns: repeat(24,1fr);
+  }
+  
+  .col-24{
+      grid-column: span 24;
+  }
+  
+  .col-22{
+      grid-column: span 22;
+  }
+  
+  .col-20{
+      grid-column: span 20;
+  }
+  
+  .col-18{
+      grid-column: span 18;
+  }
+  
+  .col-16{
+      grid-column: span 16;
+  }
+  
+  .col-14{
+      grid-column: span 14;
+  }
+  
+  .col-12{
+      grid-column: span 12;
+  }
+  
+  .col-10{
+      grid-column: span 10;
+  }
+  
+  .col-8{
+      grid-column: span 8;
+  }
+  
+  .col-6{
+      grid-column: span 6;
+  }
+  
+  .col-4{
+      grid-column: span 4;
+  }
+  
+  .flex{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+
+  .flex-column{
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+  /*no abandones tus redes*/
+
+  .porcentaje-50{
+    width: 50%;
+  }
+  .no-abandones{
+    padding: 30px 0;
+  }
+  .no-abandones .info-redes{
+   padding-right: 48px;
+  }
+
+  .no-abandones .info-redes h2{
+    font-size: 46px;
+    margin-bottom: 16px;
+
+  }
+
+  .no-abandones .info-redes p{
+    font-size: 18px;
+    margin-bottom: 40px ;
+  }
+
+  .no-abandones .info-redes button, button{
+    font-size: 14px;
+    height: 56px;
+    border-radius: 8px;
+    width: 50%;
+    border: none;
+    background-color: #DC1C2E;
+  }
+
+  .no-abandones .info-redes button:hover,button:hover{
+    background: #004E9B ;
+    cursor: pointer;
+  }
+
+  .no-abandones .info-redes button a, button a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .no-abandones .info-ofrecemos article{
+    margin-bottom: 28px;
+  }
+  .no-abandones .info-ofrecemos p{
+    font-size: 18px;
+    color: #1C1917;
+    margin: 8px 0;
+  }
+
+  .no-abandones .info-ofrecemos span{
+    font-size: 14px;
+    color: #78716C;
+  }
+
+  /*con carrousel*/
+  .flex.con-carrousel{
+    align-items: center;
+    justify-content:flex-start;
+  }
+
+  .con-carrousel .bloque-1{
+    margin-right: 64px;
+    width: 40%;
+  }
+
+  .con-carrousel h2{
+    font-size: 36px;
+    padding-right: 90px;
+    margin-bottom: 16px;
+   
+  }
+  .con-carrousel p{
+    font-size: 18px;
+    color: #1C1917;
+    margin-bottom: 32px;
+  }
+
+  .bloque-1 button{
+    width: 110px;
+    height: 56px;
+    border-radius: 999px;
+  }
+
+  @media screen and (max-width:1290px){
+    .bloque-ns{
+        max-width: 1200px;
+    }
+    .flex.con-carrousel{
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:1025px){
+    .flex{
+        flex-direction: column;
+    }
+    .porcentaje-50{
+     width: 100%;
+     text-align: center;
+    }
+
+    .con-carrousel .bloque-1 {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .con-carrousel img{
+        width: 90%;
+    }
+    .con-carrousel h2{
+        padding: 0;
+    }
+
+    .no-abandones .info-redes{
+        padding: 20px;
+    }
+  } 
