@@ -21,55 +21,7 @@
     margin-bottom: 30px;
   }
 
-  .grilla{
-      display: grid;
-      grid-template-columns: repeat(24,1fr);
-  }
-  
-  .col-24{
-      grid-column: span 24;
-  }
-  
-  .col-22{
-      grid-column: span 22;
-  }
-  
-  .col-20{
-      grid-column: span 20;
-  }
-  
-  .col-18{
-      grid-column: span 18;
-  }
-  
-  .col-16{
-      grid-column: span 16;
-  }
-  
-  .col-14{
-      grid-column: span 14;
-  }
-  
-  .col-12{
-      grid-column: span 12;
-  }
-  
-  .col-10{
-      grid-column: span 10;
-  }
-  
-  .col-8{
-      grid-column: span 8;
-  }
-  
-  .col-6{
-      grid-column: span 6;
-  }
-  
-  .col-4{
-      grid-column: span 4;
-  }
-  
+ 
   .flex{
       display: flex;
       flex-wrap: nowrap;
