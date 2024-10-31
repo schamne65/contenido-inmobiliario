@@ -33,7 +33,90 @@
     flex-direction: column;
   }
 
+/*headers*/
 
+header.flex{
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+  padding: 8px;
+ 
+}
+
+header.flex .boton-menu{
+  border-radius: 8px;
+ background: #DC1C2E;
+  padding: 12px 20px;
+}
+header.flex .boton-menu a{
+  color: #fff;
+  font-size: 12px;
+  line-height: 160%;
+ 
+
+}
+
+/*Principal*/
+
+.principal{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/principal.png");
+ backdrop-filter: #000;
+ margin-bottom: 90px;
+}
+.principal::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,60%);
+  z-index: 1;
+}
+
+.principal .porcentaje-40{
+  width: 50%;
+ position: relative;
+ z-index: 2;
+  color: #fff;
+  text-align: center;
+
+}
+.principal .porcentaje-40 b,.principal .porcentaje-40 p, .principal .porcentaje-40 h1{
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.principal .porcentaje-40 h1{
+  font-size: 72px;
+  line-height: 108%;
+}
+
+.principal .porcentaje-40 b{
+  font-size: 24px;
+}
+
+.principal .porcentaje-40 p{
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.principal .boton-principal{
+  background-color: #fff;
+  width: auto;
+  padding: 28px;
+font-size: 16px;
+height: auto;
+
+}
+
+.principal .boton-principal a{
+  color:#000 ;
+  font-weight: 100;
+}
 
   /*no abandones tus redes*/
 
@@ -41,10 +124,12 @@
     width: 50%;
   }
   .no-abandones{
-    padding: 30px 0;
+  
+    align-items: center;
   }
   .no-abandones .info-redes{
    padding-right: 48px;
+  
   }
 
   .no-abandones .info-redes h2{
@@ -77,8 +162,22 @@
     font-weight: 600;
     color: #fff;
   }
+
+  .no-abandones .info-ofrecemos{
+    background: #FAFAF9;
+    padding: 32px 10%;
+    border-radius: 48px;
+    margin: 0 auto;
+
+  }
   .no-abandones .info-ofrecemos article{
+    margin: 0 auto;
+    padding-right: 20%;
     margin-bottom: 28px;
+  }
+
+  .no-abandones .info-ofrecemos article:last-child{
+    margin-bottom: 0;
   }
   .no-abandones .info-ofrecemos p{
     font-size: 18px;
@@ -119,6 +218,72 @@
     height: 56px;
     border-radius: 999px;
   }
+
+  /*como suscribirse*/
+
+  .como-suscribirme{
+    padding-right: 20%;
+    /*aca hay algo que hacer*/
+
+  }
+
+  .como-suscribirme h2{
+    font-size: 46px;
+    width: fit-content;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .como-suscribirme h2::after{
+    content: "";
+    position: absolute;
+    width: 55%;
+    display: block;
+    height: 8px;
+    top: 100%;
+    background: #004E9B;
+  }
+
+  .como-suscribirme .info-suscribirse{
+    margin-top: 42px;
+    padding: 32px 0;
+    border-bottom: 1px solid #B1B1B1;
+  }
+  
+  
+.como-suscribirme .info-suscribirse article{
+  align-items: end;
+}
+
+  .como-suscribirme article span{
+    width: 25%;
+    margin-right:40px ;
+  }
+
+  .como-suscribirme article div{
+    width: 75%;
+  }
+
+  .como-suscribirme article div p{
+    font-size: 18px;
+    color: #78716C;
+  }
+
+  .como-suscribirme article div p:first-child{
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.como-suscribirme .info-suscribirse article .numero{
+  font-size: 60px;
+ color: #DC1C2E;
+}
+
+
+
+
 
   @media screen and (max-width:1290px){
     .bloque-ns{
