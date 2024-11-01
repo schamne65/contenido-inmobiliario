@@ -304,6 +304,36 @@ height: auto;
   color: #004E9B;
 }
 
+/*divisor*/
+
+.divisor-1,.divisor-2{
+  height: 140px;
+  width: 100%;
+  margin: 140px 0;
+}
+
+.vector-2{margin-top: -4px;}
+/*after redondo*/
+.after-redondo{
+  height: 70px;
+width: 100%;
+position: relative;
+}
+
+.after-redondo::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+ border: 25px solid #004E9B;
+  width: 370px;
+  height:370px;
+  left: auto;
+  right: -10%;
+  top: -420%;
+  border-radius: 100%;
+
+}
 
 /*pregunta frecuentes */
 .preguntas{
