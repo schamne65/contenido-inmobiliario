@@ -53,21 +53,28 @@ header.flex{
   justify-content: space-between;
   align-items: center;
   height: 92px;
-  padding: 8px;
+  padding: 16px;
  
 }
 
 header.flex .boton-menu{
   border-radius: 8px;
  background: #DC1C2E;
-  padding: 12px 20px;
+  
 }
 header.flex .boton-menu a{
   color: #fff;
   font-size: 12px;
   line-height: 160%;
+  padding: 12px 20px;
+  font-weight: 700;
  
 
+}
+
+header .icon{
+  width: auto;
+  height: auto;
 }
 
 /*Principal*/
@@ -112,16 +119,20 @@ header.flex .boton-menu a{
 .principal .porcentaje-40 b{
   font-size: 24px;
 }
-
+.principal .porcentaje-40 h1{
+  font-size: 24px;
+  line-height: 150%;
+}
 .principal .porcentaje-40 p{
   font-size: 18px;
   line-height: 150%;
+
 }
 
 .principal .boton-principal{
   background-color: #fff;
   width: auto;
-  padding: 28px;
+  padding: 21px;
 font-size: 16px;
 height: auto;
 
@@ -129,7 +140,7 @@ height: auto;
 
 .principal .boton-principal a{
   color:#000 ;
-  font-weight: 100;
+  font-weight: 400;
 }
 
   /*no abandones tus redes*/
@@ -149,12 +160,15 @@ height: auto;
   .no-abandones .info-redes h2{
     font-size: 46px;
     margin-bottom: 16px;
+    line-height: 130%;
 
   }
 
   .no-abandones .info-redes p{
     font-size: 18px;
     margin-bottom: 40px ;
+    line-height: 150%;
+    color: #78716C;
   }
 
   .no-abandones .info-redes button, button{
@@ -164,6 +178,7 @@ height: auto;
     width: 50%;
     border: none;
     background-color: #DC1C2E;
+    line-height: 160%;
   }
 
   .no-abandones .info-redes button:hover,button:hover{
@@ -186,7 +201,7 @@ height: auto;
   }
   .no-abandones .info-ofrecemos article{
     margin: 0 auto;
-    padding-right: 20%;
+   /*padding-right: 20%;*/
     margin-bottom: 28px;
   }
 
@@ -197,12 +212,20 @@ height: auto;
     font-size: 18px;
     color: #1C1917;
     margin: 8px 0;
+    font-weight: 400;
   }
 
   .no-abandones .info-ofrecemos span{
     font-size: 14px;
     color: #78716C;
   }
+
+  .no-abandones .info-ofrecemos img{
+    width: 32px;
+    height: 32px;
+  }
+
+
 
   /*con carrousel*/
   .flex.con-carrousel{
@@ -244,8 +267,9 @@ height: auto;
 
   .como-suscribirme h2{
     font-size: 46px;
+    line-height: 108%;
     width: fit-content;
-    padding-bottom: 10px;
+    padding-bottom: 24px;
     position: relative;
     font-weight: 900;
   }
@@ -325,9 +349,9 @@ position: relative;
   position: absolute;
   z-index: 1;
   display: block;
- border: 25px solid #004E9B;
-  width: 370px;
-  height:370px;
+ border: 35px solid #004E9B;
+  width: 380px;
+  height:380px;
   left: auto;
   right: -10%;
   top: -420%;
@@ -344,6 +368,7 @@ position: relative;
   font-weight: 700;
   font-size: 56px;
   margin-bottom: 24px;
+  line-height: 120%;
 
 }
 
@@ -351,6 +376,7 @@ position: relative;
   font-size: 18px;
   color: #78716C;
   margin-bottom: 80px;
+  line-height: 150%;
 }
 
 .preguntas article p{
@@ -358,9 +384,11 @@ position: relative;
 }
 
 .preguntas article h3{
+  font-family: "Source Sans 3", serif;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 16px;
+  line-height: 140%;
 }
 .preguntas article p{
   font-size: 14px;
@@ -382,7 +410,7 @@ position: relative;
   font-size: 36px;
   position: relative;
   width: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   position: relative;
   margin-bottom: 30px;
 }
@@ -445,23 +473,80 @@ footer article.flex{
   align-items: start;
 }
   @media screen and (max-width:1290px){
+    .principal .porcentaje-40{
+      width: 60%;
+    }
+    .after-redondo::after{
+      right: -15%;
+      width: 360px;
+      height: 360px;
+    }
     .bloque-ns{
         max-width: 1200px;
     }
     .flex.con-carrousel{
         justify-content: center;
     }
+    .como-suscribirme .info-suscribirse{
+      width: 90%;
+    }
+  }
+  @media screen and (max-width:1025px){
+    .principal .porcentaje-40{
+      width: 90%;
+    }
+    .bloque-ns{
+      max-width: 900px;
+    }
+
+    .after-redondo::after{
+      width: 300px;
+      height: 300px;
+    }
+
+    .crece .porcentaje-50  .para-ig{
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  @media screen and (max-width:1025px){
+  @media screen and (max-width:1020px){
+    .principal .porcentaje-40 h2{
+      font-size: 70px;
+    }
+    header.flex{
+      flex-direction: row;
+    }
     .flex{
         flex-direction: column;
     }
-    .porcentaje-50{
-     width: 100%;
-     text-align: center;
-    }
 
+    .como-suscribirme .info-suscribirse article{
+      align-items: start;
+      
+    }
+    .como-suscribirme .info-suscribirse{
+      width: 100%;
+    }
+    .como-suscribirme article div{
+      width: 100%;
+    }
+    .after-redondo::after {
+      width: 150px;
+      height: 150px;
+      top: -200%;
+  }
+  .info-suscribirse .flex{
+    flex-direction: row;
+  }
+    .porcentaje-50,    .bloque-ns {
+     width: 90%;
+     text-align: start;
+     padding-right: 0;
+    }
+    .como-suscribirme.bloque-ns{
+      text-align: start;
+    }
     .con-carrousel .bloque-1 {
         margin-right: 0;
         width: 100%;
@@ -478,5 +563,6 @@ footer article.flex{
 
     .no-abandones .info-redes{
         padding: 20px;
+        margin-bottom: 30px;
     }
   } 
