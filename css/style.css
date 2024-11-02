@@ -472,6 +472,14 @@ footer h3, footer p, footer b, footer a{
 footer article.flex{
   align-items: start;
 }
+
+@media screen and (max-width:1500px){
+  .after-redondo::after{
+    right: -18%;
+    width: 360px;
+    height: 360px;
+  }
+}
   @media screen and (max-width:1290px){
     .principal .porcentaje-40{
       width: 60%;
