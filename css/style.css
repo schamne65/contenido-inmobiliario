@@ -260,7 +260,7 @@ height: auto;
 
   .como-suscribirme{
     padding-right: 10%;
-    margin-bottom: 70px;
+    margin-bottom: 32px;
     /*aca hay algo que hacer*/
 
   }
@@ -336,6 +336,10 @@ height: auto;
   margin: 140px 0;
 }
 
+.separador-mobile{
+  display: none;
+}
+
 .vector-2{margin-top: -4px;}
 /*after redondo*/
 .after-redondo{
@@ -343,7 +347,9 @@ height: auto;
 width: 100%;
 position: relative;
 }
-
+.after-redondo img{
+ display: none;
+}
 .after-redondo::after{
   content: "";
   position: absolute;
@@ -552,9 +558,16 @@ footer article.flex{
       width: 100%;
     }
     .after-redondo::after {
-      width: 150px;
-      height: 150px;
-      top: -200%;
+    display: none;
+  }
+  .after-redondo img{
+    display: block;
+    position: absolute; 
+    top: -150%;
+    z-index: 1;
+    left: auto;
+    right: 0;
+    
   }
   .info-suscribirse .flex{
     flex-direction: row;
@@ -585,11 +598,47 @@ footer article.flex{
         padding: 20px;
         margin-bottom: 30px;
     }
+    .separador-escritorio{
+      display: none;
+    }
+    .separador-mobile{
+      display: block;
+    }
+
+    .crece article {
+      margin: 0;
+    }
+
+    .crece .porcentaje-50{
+      width: 100%;
+    }
+
+    .crece article p {
+      width: 100%;
+    }
+
+    .crece .porcentaje-50 .flex{
+      flex-direction: row;
+      justify-content: center;
+    }
+    footer.bloque-ns-100{
+      padding: 32px;
+    }
+    footer img{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+
+    footer .flex .flex{
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .roman{
+      text-align: center;
+    }
   } 
 
-  @media screen and (max-width:760px){
-    .after-redondo::after{
-  top: -150%;
-  right: -30%;
-  border: 20px solid #004E9B;}
-  }
+ 
