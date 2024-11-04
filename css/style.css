@@ -500,6 +500,8 @@ footer article.flex{
     }
   }
   @media screen and (max-width:1025px){
+
+
     .principal .porcentaje-40{
       width: 90%;
     }
@@ -519,6 +521,16 @@ footer article.flex{
   }
 
   @media screen and (max-width:1020px){
+    .divisor-1,.divisor-2{
+    
+      width: 100wv;
+    
+    }
+    
+    .divisor-1 img,.divisor-2 img{
+      width: 100%;
+    }
+
     .principal .porcentaje-40 h2{
       font-size: 70px;
     }
