@@ -643,6 +643,10 @@ footer article.flex{
       margin-bottom: 10px;
     }
 
+    .after-redondo img{
+      top: -95%;
+    }
+
     .roman{
       text-align: center;
     }
