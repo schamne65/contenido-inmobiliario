@@ -413,7 +413,8 @@ position: relative;
 }
 
 .crece h2{
-  font-size: 36px;
+font-size: 2em;
+
   position: relative;
   width: fit-content;
   padding-bottom: 20px;
@@ -550,6 +551,10 @@ footer article.flex{
   }
 
   @media screen and (max-width:1020px){
+
+    .crece h2{
+      margin-top: 30px;
+    }
     .divisor-1,.divisor-2{
     
       width: 100vw;
