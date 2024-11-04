@@ -506,7 +506,13 @@ footer article.flex{
     }
   }
   @media screen and (max-width:1025px){
-
+    .separador-escritorio{
+      display: none;
+    }
+    .separador-mobile{
+      display: block;
+      width: 100%;
+    }
 
     .principal .porcentaje-40{
       width: 90%;
@@ -520,9 +526,26 @@ footer article.flex{
       height: 300px;
     }
 
+    .crece.bloque-ns { align-items: center; height: auto}
+    .crece.bloque-ns img{
+      height: auto ;
+    }
     .crece .porcentaje-50  .para-ig{
       width: 100%;
       height: 100%;
+    }
+
+    .after-redondo::after {
+      display: none;
+    }
+    .after-redondo img{
+      display: block;
+      position: absolute; 
+      top: -150%;
+      z-index: 1;
+      left: auto;
+      right: 0;
+      
     }
   }
 
@@ -557,18 +580,7 @@ footer article.flex{
     .como-suscribirme article div{
       width: 100%;
     }
-    .after-redondo::after {
-    display: none;
-  }
-  .after-redondo img{
-    display: block;
-    position: absolute; 
-    top: -150%;
-    z-index: 1;
-    left: auto;
-    right: 0;
-    
-  }
+
   .info-suscribirse .flex{
     flex-direction: row;
   }
@@ -598,12 +610,7 @@ footer article.flex{
         padding: 20px;
         margin-bottom: 30px;
     }
-    .separador-escritorio{
-      display: none;
-    }
-    .separador-mobile{
-      display: block;
-    }
+ 
 
     .crece article {
       margin: 0;
