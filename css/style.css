@@ -586,3 +586,10 @@ footer article.flex{
         margin-bottom: 30px;
     }
   } 
+
+  @media screen and (max-width:760px){
+    .after-redondo::after{
+  top: -150%;
+  right: -30%;
+  border: 20px solid #004E9B;}
+  }
