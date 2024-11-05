@@ -199,6 +199,8 @@ height: auto;
     margin: 0 auto;
 
   }
+
+  
   .no-abandones .info-ofrecemos article{
     margin: 0 auto;
    /*padding-right: 20%;*/
@@ -209,6 +211,7 @@ height: auto;
     margin-bottom: 0;
   }
   .no-abandones .info-ofrecemos h3{
+    font-family: "Source Sans 3", serif;
     font-size: 18px;
     color: #1C1917;
     margin: 8px 0;
@@ -309,11 +312,13 @@ height: auto;
     color: #78716C;
   }
 
+  /*.como-suscribirme article div h3{}*/
   .como-suscribirme article div h3:first-child{
     color: #000;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 16px;
+    font-family: "Source Sans 3", serif;
 }
 
 .como-suscribirme .info-suscribirse article .numero{
@@ -468,6 +473,7 @@ footer.bloque-ns-100 img{
 }
 
 footer .bloque-ns h3{
+  font-family: "Source Sans 3", serif;
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 8px;
@@ -566,7 +572,7 @@ footer article.flex{
     }
 
     .principal .porcentaje-40 h2{
-      font-size: 70px;
+      font-size: 45px;
     }
     header.flex{
       flex-direction: row;
@@ -654,6 +660,15 @@ footer article.flex{
 
     .roman{
       text-align: center;
+    }
+
+    .principal{
+      height: auto;
+      padding: 30px 0;
+    }
+
+    .principal h2{
+      font-size: 45px;
     }
   } 
 
